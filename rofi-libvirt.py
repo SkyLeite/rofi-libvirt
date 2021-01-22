@@ -148,7 +148,8 @@ elif rofi_retv == 1:
         dom = conn.lookupByName(domname)
         state, reason = dom.state()
         for op in states[state]["cmds"]:
-            print("{}\0info\x1fexec-op {}".format(op, domname))
+            icon = ops[op]["icon"]
+            print("{0}\0info\x1fexec-op {1}\x1ficon\x1f{2}".format(op, domname, icon))
     else:
         infolist = rofi_info.split(" ",1)
         if infolist[0] == "exec-op" and len(infolist) == 2:
