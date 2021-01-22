@@ -1,6 +1,6 @@
 # rofi-libvirt
 
-Simple script to manage libvirt domains.
+Simple custom script for [Rofi](https://github.com/davatorium/rofi) to manage libvirt domains.
 
 ## Requirements
 
