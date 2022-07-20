@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#! /usr/bin/env nix-shell
+#! nix-shell -i python310 -p python310 python310Packages.libvirt
 
 from __future__ import print_function
 import sys
